@@ -1,0 +1,127 @@
+/* Universal Selector */
+*{
+    letter-spacing:2px;
+}
+:root{
+    scroll-behavior: auto;
+}
+/* Start Of Header */
+header {
+    height: 100vh;
+    background-image:linear-gradient(to left,rgba(0, 0, 0,0.6), rgba(0, 0, 0,0.6)), url(../image/party.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+}
+/* Start Of SideBar */
+.sidebar{
+    position:fixed;
+    width:270px;
+    top:0;
+    left:0;
+    z-index:2000;
+    left:-270px;
+    transition:1s;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight:500;
+    font-size:25px;
+    letter-spacing:4px;
+    transition:0.7s;
+}
+.sidebar ul li{
+    margin-top: 50px;
+    text-align:center;
+    cursor:pointer;
+    padding:10px;
+}
+.sidebar ul li:hover a{
+ color:brown;
+}
+.sidebar .icon-nav{
+    right:30px;
+    cursor:pointer;  
+    transition:0.7s;
+    color:white;
+}
+.sidebar .icon-nav:hover{
+    scale:1.5;
+    color:brown;
+    z-index: 999;
+    rotate:90deg;
+}
+.sidebar #open{
+    position: relative;
+    left:240px;
+    top:-120px;
+    z-index: 999;
+    color:brown;
+}
+.sidebar span{
+    cursor:pointer;
+}
+
+/* Start Of Singer */
+.singer{
+    background-color: rgba(214, 46, 51 , 0.6);
+}
+.singer h3{
+    padding:10px 0;
+    color:White;
+}
+.singer h3:hover{
+    cursor:pointer;
+}
+.singer .content{
+    background-color:#CCC;
+    height:180px;
+    padding: 15px;
+    display: none;
+}
+
+/* Start Of Duration */
+.duration{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/joinus.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+
+/* Start Of Contact */
+.contact ul li{
+    width:40px;
+    height:40px;
+    border:1px solid #999;
+    margin-left: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.7s;
+}
+.contact ul li:hover{
+    background-color:#e33c3c;
+}
+.contact ul li:hover a i{
+    color:#fff;
+}
+.contact ul li a i{
+    color:#999;
+}
+.contact .btn-custom{
+    background-color:#e33c3c;
+    padding:10px 15px;
+    border-radius:0;
+}
+:not(.btn-check)+.btn:active{
+    background-color:#e33c3c;
+    border-color:#e33c3c; 
+}
+/* Start Of Footer */
+footer{
+    background-color:#e33c3c;
+}
